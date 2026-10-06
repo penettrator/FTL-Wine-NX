@@ -1,0 +1,22 @@
+# FTL: Advanced Edition on Wine-NX. FTL has no gamepad support: the buttons work as
+# a mouse and keyboard, and the touchscreen clicks where it is touched. (FTL polls
+# XInput anyway; xinput1_4.dll / xinput1_3.dll next to it answer "not connected", or
+# Wine-NX would stop sending these keys.)
+# Format as in switch/wine/config/keys.txt: NAME=Windows virtual-key code.
+# A and B are not set here: Wine-NX keeps them as the left and right mouse buttons.
+# FTL's own keys (Options - Controls in the game): F1-F8 crew, Q all crew, J jump,
+# U ship, V autofire, 1-4 weapons, Space pause.
+LSTICK=mouse
+RSTICK=mouse
+X=0x20       # Space: pause / resume
+Y=0x0D       # Enter: confirm
+PLUS=0x1B    # Esc: menu
+MINUS=0x56   # V: autofire
+L=0x31       # 1: weapon 1
+R=0x32       # 2: weapon 2
+ZL=0x33      # 3: weapon 3
+ZR=0x34      # 4: weapon 4
+UP=0x4A      # J: star map / jump
+DOWN=0x55    # U: ship and upgrades
+LEFT=0x70    # F1: crew member 1
+RIGHT=0x51   # Q: whole crew

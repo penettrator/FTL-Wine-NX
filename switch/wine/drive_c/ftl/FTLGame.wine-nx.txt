@@ -1,0 +1,5 @@
+# FTL: Advanced Edition (GOG, PC). OpenGL. 32-bit program: in the 39-bit Autorun
+# mode Wine-NX maps it above 4 GB and WOW64 fails (c000000d), so it runs under
+# the 32-bit forwarder like the other games.
+title=FTL: Advanced Edition
+address-space=32-bit
